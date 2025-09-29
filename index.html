@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форми та елементи</title>
+</head>
+<body>
+
+  <img src="./images/photo_2022-05-09_13-34-09.jpg" alt="Початок">
+
+<h2>HTML форми</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  Ім'я:<br>
+  <input type="text" name="firstname" value="Mickey">
+  <br>
+  Прізвище:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h2>Елемент input</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  Введіть ваше ім'я:
+  <input name="firstname" type="text"> 
+  <br><br>
+  <input type="submit">
+</form>
+
+<h2>Елемент select</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  <select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
+
+<h2>Попередньо вибраний варіант</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  <select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat" selected>Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
+
+<h2>Видимі значення параметрів</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  <select name="cars" size="3">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
+
+<h2>Дозволити множинний вибір</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  <select name="cars" size="4" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
+
+<h2>Textarea</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  <textarea name="message" rows="10" cols="30">Кіт лизав яйця, лежачі в кущах.</textarea>
+  <br>
+  <input type="submit">
+</form>
+
+<h2>Елемент button</h2>
+<button type="button" onclick="alert('Слава Україні!')">Тицни мене!</button>
+
+<h2>Поле пароля</h2>
+<form action="#">
+  Ім'я користувача:<br>
+  <input type="text" name="userid">
+  <br>
+  Пароль користувача:<br>
+  <input type="password" name="psw">
+</form>
+
+<h2>Кнопка Reset</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  Ім'я:<br>
+  <input type="text" name="firstname" value="Mickey">
+  <br>
+  Прізвище:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+</form>
+
+<h2>Радіо кнопки</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  <input type="radio" name="gender" value="male" checked> Чоловік<br>
+  <input type="radio" name="gender" value="female"> Жінка<br>
+  <input type="radio" name="gender" value="other"> Щось таке<br><br>
+  <input type="submit">
+</form>
+
+<h2>Прапорці</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  <input type="checkbox" name="vehicle1" value="Bike"> У мене є велосипед<br>
+  <input type="checkbox" name="vehicle2" value="Car"> У мене є автомобіль<br><br>
+  <input type="submit">
+</form>
+
+<h2>Атрибут maxlength</h2>
+<form action="#">
+  Ім'я:<br>
+  <input type="text" name="firstname" maxlength="10">
+  <br>
+  Прізвище:<br>
+  <input type="text" name="lastname">
+</form>
+
+<h2>Атрибут form</h2>
+<form action="https://www.w3schools.com/action_page.php" id="form1">
+  Ім'я: <input type="text" name="fname"><br>
+  <input type="submit" value="Submit">
+</form>
+Прізвище: <input type="text" name="lname" form="form1">
+
+<h2>Атрибут formaction</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  Ім'я: <input type="text" name="fname"><br>
+  Прізвище: <input type="text" name="lname"><br>
+  <input type="submit" value="Відправити">
+  <input type="submit" formaction="/action_page2.php" value="Відправити на іншу сторінку">
+</form>
+
+<h2>Атрибут formenctype</h2>
+<form action="https://www.w3schools.com/action_page_binary.asp" method="post">
+  Ім'я: <input type="text" name="fname"><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+</form>
+
+<h2>Атрибут formmethod</h2>
+<form action="https://www.w3schools.com/action_page.php" method="get">
+  Ім'я: <input type="text" name="fname"><br>
+  Прізвище: <input type="text" name="lname"><br>
+  <input type="submit" value="Відправити">
+  <input type="submit" formmethod="post" value="Відправити за допомогою POST">
+</form>
+
+<h2>Атрибут formtarget</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  Ім'я: <input type="text" name="fname"><br>
+  Прізвище: <input type="text" name="lname"><br>
+  <input type="submit" value="Відправити як зазвичай">
+  <input type="submit" formtarget="_blank" value="Відправити в новому вікні/вкладці">
+</form>
+
+</body>
+</html>
